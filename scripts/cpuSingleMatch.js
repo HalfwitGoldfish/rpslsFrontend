@@ -1,37 +1,15 @@
-import { getData } from "./app.js";
+import { getData, winConditions, ending } from "./app.js";
 
 const gameMode = document.getElementById ( "gameMode" );
-const rpsls = document.getElementById ( "rpsls" );
-const gameTitle = document.getElementById ( "gameTitle" );
-
-const rock = document.getElementById ( "rock" );
-const paper = document.getElementById ( "paper" );
-const scissor = document.getElementById ( "scissor" );
-const lizard = document.getElementById ( "lizard" );
-const spock = document.getElementById ( "spock" );
 
 const rockBtn = document.getElementById ( "rockBtn" );
 const paperBtn = document.getElementById ( "paperBtn" );
 const scissorBtn = document.getElementById ( "scissorBtn" );
 const lizardBtn = document.getElementById ( "lizardBtn" );
 const spockBtn = document.getElementById ( "spockBtn" );
-const yesBtn = document.getElementById ( "yesBtn" );
-const noBtn = document.getElementById ( "noBtn" );
 
 const scorePlayer1 = document.getElementById ( "scorePlayer1" );
 const scorePlayer2 = document.getElementById ( "scorePlayer2" );
-
-const endPopup = document.getElementById ( "endPopup" );
-const endCenter = document.getElementById ( "endCenter" );
-
-const winConditions =
-{
-    "Rock": [ "Scissor", "Lizard" ],
-    "Paper": [ "Rock", "Spock" ],
-    "Scissor": [ "Paper", "Lizard" ],
-    "Lizard": [ "Spock", "Paper" ],
-    "Spock": [ "Scissor", "Rock" ]
-};
 
 let winLoseTie = 0;
 
@@ -40,23 +18,6 @@ let player1Score = 0;
 let player2Score = 0;
 
 let playerResponse = "";
-
-const ending = () =>
-{
-    rpsls.textContent = "Play Again?"
-    gameTitle.textContent = ""
-    endPopup.classList = "row2 endScreen"
-    gameMode.classList = "endOpacity";
-    rpsls.classList = "endOpacity playAgain";
-    endCenter.classList = "endCenter"
-    rock.classList = "displayNone"
-    paper.classList = "displayNone"
-    scissor.classList = "displayNone"
-    lizard.classList = "displayNone"
-    spock.classList = "displayNone"
-    yesBtn.classList = "";
-    noBtn.classList = "";
-}
 
 rockBtn.addEventListener( "click", async () =>
     {

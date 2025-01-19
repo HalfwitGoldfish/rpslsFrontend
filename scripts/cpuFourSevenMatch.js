@@ -2,27 +2,15 @@ import { getData, winConditions, ending } from "./app.js";
 
 const gameMode = document.getElementById ( "gameMode" );
 const rpsls = document.getElementById ( "rpsls" );
-const gameTitle = document.getElementById ( "gameTitle" );
-
-const rock = document.getElementById ( "rock" );
-const paper = document.getElementById ( "paper" );
-const scissor = document.getElementById ( "scissor" );
-const lizard = document.getElementById ( "lizard" );
-const spock = document.getElementById ( "spock" );
 
 const rockBtn = document.getElementById ( "rockBtn" );
 const paperBtn = document.getElementById ( "paperBtn" );
 const scissorBtn = document.getElementById ( "scissorBtn" );
 const lizardBtn = document.getElementById ( "lizardBtn" );
 const spockBtn = document.getElementById ( "spockBtn" );
-const yesBtn = document.getElementById ( "yesBtn" );
-const noBtn = document.getElementById ( "noBtn" );
 
 const scorePlayer1 = document.getElementById ( "scorePlayer1" );
 const scorePlayer2 = document.getElementById ( "scorePlayer2" );
-
-const endPopup = document.getElementById ( "endPopup" );
-const endCenter = document.getElementById ( "endCenter" );
 
 let winLoseTie = 0;
 
@@ -62,7 +50,7 @@ rockBtn.addEventListener( "click", async () =>
                 rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`
             }
     
-        if ( rounds === 7 && player1Score >= 4 )
+        if ( rounds === 7 || player1Score === 4 )
             {
             winLoseTie = 1;
             switch (winLoseTie)
@@ -80,7 +68,7 @@ rockBtn.addEventListener( "click", async () =>
                     ending();
                     break;
                 };
-            }else if ( rounds === 7 && player2Score >= 4 )
+            }else if ( rounds === 7 || player2Score === 4 )
             {
             winLoseTie = 2;
             switch (winLoseTie)
@@ -129,7 +117,7 @@ paperBtn.addEventListener( "click", async () =>
                 rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`
             }
     
-        if ( rounds === 7 && player1Score >= 4 )
+        if ( rounds === 7 || player1Score === 4 )
             {
             winLoseTie = 1;
             switch (winLoseTie)
@@ -147,7 +135,7 @@ paperBtn.addEventListener( "click", async () =>
                     ending();
                     break;
                 };
-            }else if ( rounds === 7 && player2Score >= 4 )
+            }else if ( rounds === 7 || player2Score === 4 )
             {
             winLoseTie = 2;
             switch (winLoseTie)
@@ -196,7 +184,7 @@ scissorBtn.addEventListener( "click", async () =>
                 rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`
             }
     
-        if ( rounds === 7 && player1Score >= 4 )
+        if ( rounds === 7 || player1Score === 4 )
             {
             winLoseTie = 1;
             switch (winLoseTie)
@@ -214,7 +202,7 @@ scissorBtn.addEventListener( "click", async () =>
                     ending();
                     break;
                 };
-            }else if ( rounds === 5 && player2Score >= 3 )
+            }else if ( rounds === 7 || player2Score === 4 )
             {
             winLoseTie = 2;
             switch (winLoseTie)
@@ -263,7 +251,7 @@ lizardBtn.addEventListener( "click", async () =>
                 rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`
             }
     
-        if ( rounds === 7 && player1Score >= 4 )
+        if ( rounds === 7 || player1Score === 4 )
             {
             winLoseTie = 1;
             switch (winLoseTie)
@@ -281,7 +269,7 @@ lizardBtn.addEventListener( "click", async () =>
                     ending();
                     break;
                 };
-            }else if ( rounds === 7 && player2Score >= 4 )
+            }else if ( rounds === 7 || player2Score === 4 )
             {
             winLoseTie = 2;
             switch (winLoseTie)
@@ -330,7 +318,7 @@ spockBtn.addEventListener( "click", async () =>
                 rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`
             }
     
-        if ( rounds === 7 && player1Score >= 4 )
+        if ( rounds === 7 || player1Score === 4 )
             {
             winLoseTie = 1;
             switch (winLoseTie)
@@ -348,7 +336,7 @@ spockBtn.addEventListener( "click", async () =>
                     ending();
                     break;
                 };
-            }else if ( rounds === 7 && player2Score >= 4 )
+            }else if ( rounds === 7 || player2Score === 4 )
             {
             winLoseTie = 2;
             switch (winLoseTie)
