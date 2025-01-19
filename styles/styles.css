@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Gowun+Dodum&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+    font-family: "jejuhallasan";
+    src: url(/assets/fonts/JejuHallasan-Regular.ttf);
+}
+
+body
+{
+    background-color: #000123;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter", serif;
+    box-shadow: inset 0px 0px 1em #0003547d;
+}
+
+button
+{
+    background-color: #FFFFFF;
+    color: black;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Inter", serif;
+    box-shadow: 1px 1px .3em rgba(211, 211, 211, 0.5);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+button:hover
+{
+    background-color: #FE0CCE;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+#tutorialBtn
+{
+    display: flex;
+    justify-content: end;
+    height: 75px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#tutorialBtn button
+{
+    width: 200px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#gameMode
+{
+    display: flex;
+    justify-content: center;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+#gameMode h2
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#rpsls
+{
+    display: flex;
+    justify-content: center;
+    font-size: 46px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#rpsls h1
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#gameTitle
+{
+    display: flex;
+    justify-content: center;
+    font-size: 78px;
+    font-weight: bold;
+}
+
+#gameTitle h2
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "jejuhallasan";
+}
+
+#container
+{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    height: 100vh;
+}
+
+.row1
+{
+    grid-row: 1;
+}
+
+.row2
+{
+    grid-row: 2;
+}
+
+.row3
+{
+    grid-row: 3;
+}
+
+.displayNone
+{
+    display: none;
+}
+
+.activePlayer
+{
+    background-color: #FE0CCE;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+#tutorialImage
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#tutorialImage img
+{
+    border-radius: 5px;
+    border: solid black 2px;
+    box-shadow: 0px 0px 1em rgba(211, 211, 211, 0.5);
+}

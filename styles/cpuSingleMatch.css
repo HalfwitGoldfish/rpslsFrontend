@@ -1,0 +1,180 @@
+@import url(/styles/vsselect.css);
+
+#gameMode
+{
+    opacity: 20%;
+}
+
+#rpsls
+{
+    font-size: 36px;
+    opacity: 20%;
+}
+
+#gameTitle
+{
+    font-size: 66px;
+    opacity: 20%;
+}
+
+.player
+{
+    display: flex;
+    height: 75px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.player button
+{
+    width: 200px;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.inactivePlayer:hover
+{
+    background-color: #FFFFFF;
+    color: black;
+    border-color: black;
+}
+
+.playerScore
+{
+    display: flex;
+    height: 75px;
+}
+
+.playerScore button
+{
+    width: 75px;
+}
+
+.playerScore button:hover
+{
+    background-color: #FFFFFF;
+    color: black;
+    border-color: black;
+}
+
+.vscpuBtn
+{
+    display: flex;
+    justify-content: center;
+    height: 75px;
+}
+
+.vscpuBtn button
+{
+    width: 200px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.vscpuBtn button:hover
+{
+    background-color: #FFFFFF;
+    color: black;
+    border-color: black;
+    cursor: default;
+}
+
+.attackImg img
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    border: 1px black solid;
+}
+
+.attackImg button
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px black solid;
+    background-color: lightgray;
+}
+
+.attackImg button:hover
+{
+    background-color: #FE0CCE;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.endScreen
+{
+    margin-top: 75px;
+    background-color: #FFFFFF;
+    color: black;
+    border-color: black 2px solid;
+    box-shadow: 1px 1px 2em rgba(211, 211, 211, 0.5);
+    width: 600px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.endCenter
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.endOpacity
+{
+    opacity: 100% !important;
+    margin-top: 20px;
+}
+
+.playAgain
+{
+    color: blue;
+    margin-top: 50px;
+}
+
+.lastPlay
+{
+    color: white;
+}
+
+#yesNoButtons
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#yesBtn button
+{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(153, 205, 50, 0.8);
+    width: 125px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+#yesBtn button:hover
+{
+    background-color: #FE0CCE;
+}
+
+#noBtn button
+{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.7);
+    width: 125px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+#noBtn button:hover
+{
+    background-color: #FE0CCE;
+}

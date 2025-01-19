@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/cpuRoundsSelect.css">
+</head>
+<body>
+    <div id="startScreen">
+        <div id="container">
+                <div id="hometutorialRow" class="row1">
+                    <a href="/index.html" id="tutorialBtn">
+                        <button>Home</button>
+                    </a>
+                    <div id="tutorialBtn">
+                        <button id="tutorialOpen">Tutorial</button>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div id="rpsls">
+                        <h1>Rock Paper Scissor Lizard Spock</h1>
+                    </div>
+                    <div id="gameTitle">
+                        <h2>Ultimate Edition</h2>
+                    </div>
+                </div>
+                <div id="vsselectRow" class="row3">
+                    <div>
+                        <a id="vsplayerBtn" href="/pages/pvpSingleMatch.html">
+                            <button>Single</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a id="vscpuBtn" href="/pages/cpuThreeFiveMatch.html">
+                            <button>Best 3 / 5</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a id="vscpuBtn" href="/pages/cpuFourSevenMatch.html">
+                            <button>Best 4 / 7</button>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div id="tutorialScreen" class="displayNone">
+        <div id="container">
+                <div id="tutorialBtn" class="row1">
+                    <button id="tutorialClose" class="activePlayer">Tutorial</button>
+                </div>
+                <div id="tutorialImage" class="row2">
+                    <img src="/assets/rpslsTutorial.jpg" alt="Tutorial">
+                </div>
+        </div>
+    </div>
+    <script src="/scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+@import url(/styles/styles.css);
+
+#vsplayerBtn
+{
+    display: flex;
+    justify-content: center;
+    height: 125px;
+}
+
+#vsplayerBtn button
+{
+    width: 450px;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+#vscpuBtn
+{
+    display: flex;
+    justify-content: center;
+    height: 125px;
+}
+
+#vscpuBtn button
+{
+    width: 450px;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+#vsselectRow
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#hometutorialRow
+{
+    display: flex;
+    justify-content: space-between;
+}

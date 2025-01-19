@@ -1,0 +1,15 @@
+@import url(/styles/styles.css);
+
+#playBtn
+{
+    display: flex;
+    justify-content: center;
+    height: 125px;
+}
+
+#playBtn button
+{
+    width: 400px;
+    font-size: 64px;
+    font-weight: bold;
+}
