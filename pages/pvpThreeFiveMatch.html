@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/cpuSingleMatch.css">
+</head>
+<body>
+    <div id="startScreen">
+        <div id="container">
+                <div id="hometutorialRow" class="row1">
+    
+                    <a href="/index.html" id="tutorialBtn">
+                        <button>Home</button>
+                    </a>
+    
+                    <div class="player">
+                        <button id="player1" class="activePlayer">Player 1:</button>
+                        <div class="playerScore">
+                            <button id="scorePlayer1">0</button>
+                        </div>
+                    </div>
+    
+                    <div class="player">
+                        <button id="player2" class="inactivePlayer">Player 2:</button>
+                        <div class="playerScore">
+                            <button id="scorePlayer2">0</button>
+                        </div>
+                    </div>
+    
+                    <div id="tutorialBtn">
+                        <button id="tutorialOpen">Tutorial</button>
+                    </div>
+                </div>
+                <div id="endCenter">
+                    <div id="endPopup" class="row2">
+                        <div id="gameMode">
+                            <h2>Best 3 / 5</h2>
+                        </div>
+                        <div id="rpsls">
+                            <h1>Rock Paper Scissor Lizard Spock</h1>
+                        </div>
+                        <div id="gameTitle">
+                            <h2>Ultimate Edition</h2>
+                        </div>
+                        <div id="yesNoButtons">
+                            <div>
+                                <a id="yesBtn" class="displayNone" href="/pages/pvpThreeFiveMatch.html">
+                                    <button>Yes</button>
+                                </a>
+                            </div>
+                            <div>
+                                <a id="noBtn" class="displayNone" href="/index.html">
+                                    <button>No</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="player1Btns">
+                    <div id="vsselectRow" class="row3">
+        
+                        <rock id="rock">
+                            <div class="attackImg">
+                                <button id="rockBtn">
+                                    <img src="/assets/Rock.jpg" alt="hand in fist">
+                                </button>
+                            </div>
+                            <div class="vscpuBtn">
+                                <button>Rock</button>
+                            </div>
+                        </rock>
+        
+                        <paper id="paper">
+                            <div class="attackImg">
+                                <button id="paperBtn">
+                                    <img src="/assets/Paper.jpg" alt="hand holding paper">
+                                </button>
+                            </div>
+                            <div class="vscpuBtn">
+                                <button>Paper</button>
+                            </div>
+                        </paper>
+        
+                        <scissor id="scissor">
+                            <div class="attackImg">
+                                <button id="scissorBtn">
+                                    <img src="/assets/Scissors.jpg" alt="hand holding scissors">
+                                </button>
+                            </div>
+                            <div class="vscpuBtn">
+                                <button>Scissor</button>
+                            </div>
+                        </scissor>
+        
+                        <lizard id="lizard">
+                            <div class="attackImg">
+                                <button id="lizardBtn">
+                                    <img src="/assets/Lizard.jpg" alt="lizard silhouette">
+                                </button>
+                            </div>
+                            <div class="vscpuBtn">
+                                <button>Lizard</button>
+                            </div>
+                        </lizard>
+        
+                        <spock id="spock">
+                            <div class="attackImg">
+                                <button id="spockBtn">
+                                    <img src="/assets/Spock.jpg" alt="hand doing spock sign">
+                                </button>
+                            </div>
+                            <div class="vscpuBtn">
+                                <button>Spock</button>
+                            </div>
+                        </spock>
+        
+                    </div>
+                </div>
+
+                <div id="player2Btns" class="displayNone">
+                    <div id="vsselectRow" class="row3">
+        
+                        <rock id="rock">
+                            <div class="attackImg">
+                                <button id="rockBtn2">
+                                    <img src="/assets/Rock.jpg" alt="hand in fist">
+                                </button>
+                            </div>
+                            <div class="vscpuBtn">
+                                <button>Rock</button>
+                            </div>
+                        </rock>
+        
+                        <paper id="paper">
+                            <div class="attackImg">
+                                <button id="paperBtn2">
+                                    <img src="/assets/Paper.jpg" alt="hand holding paper">
+                                </button>
+                            </div>
+                            <div class="vscpuBtn">
+                                <button>Paper</button>
+                            </div>
+                        </paper>
+        
+                        <scissor id="scissor">
+                            <div class="attackImg">
+                                <button id="scissorBtn2">
+                                    <img src="/assets/Scissors.jpg" alt="hand holding scissors">
+                                </button>
+                            </div>
+                            <div class="vscpuBtn">
+                                <button>Scissor</button>
+                            </div>
+                        </scissor>
+        
+                        <lizard id="lizard">
+                            <div class="attackImg">
+                                <button id="lizardBtn2">
+                                    <img src="/assets/Lizard.jpg" alt="lizard silhouette">
+                                </button>
+                            </div>
+                            <div class="vscpuBtn">
+                                <button>Lizard</button>
+                            </div>
+                        </lizard>
+        
+                        <spock id="spock">
+                            <div class="attackImg">
+                                <button id="spockBtn2">
+                                    <img src="/assets/Spock.jpg" alt="hand doing spock sign">
+                                </button>
+                            </div>
+                            <div class="vscpuBtn">
+                                <button>Spock</button>
+                            </div>
+                        </spock>
+        
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+    <div id="tutorialScreen" class="displayNone">
+        <div id="container">
+                <div id="tutorialBtn" class="row1">
+                    <button id="tutorialClose" class="activePlayer">Tutorial</button>
+                </div>
+                <div id="tutorialImage" class="row2">
+                    <img src="/assets/rpslsTutorial.jpg" alt="Tutorial">
+                </div>
+        </div>
+    </div>
+    <script type="module" src="/scripts/pvpSingleMatch.js"></script>
+</body>
+</html>
