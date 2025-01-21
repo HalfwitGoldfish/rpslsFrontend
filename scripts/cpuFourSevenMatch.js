@@ -12,10 +12,6 @@ const spockBtn = document.getElementById ( "spockBtn" );
 const scorePlayer1 = document.getElementById ( "scorePlayer1" );
 const scorePlayer2 = document.getElementById ( "scorePlayer2" );
 
-let winLoseTie = 0;
-
-let rounds = 0;
-
 let player1Score = 0;
 
 let player2Score = 0;
@@ -31,61 +27,30 @@ rockBtn.addEventListener( "click", async () =>
             {
                 player1Score += 1;
                 scorePlayer1.textContent = player1Score;
-                rounds += 1;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! You destroyed them!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! You destroyed them!`;
             }else if ( playerResponse === cpuResponse )
             {
                 player1Score;
                 player2Score;
-                rounds;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! An even clash!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! An even clash!`;
             }else
             {
                 player2Score += 1;
                 scorePlayer2.textContent = player2Score;
-                rounds += 1;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`;
             }
     
-        if ( rounds === 7 || player1Score === 4 )
+        if ( player1Score === 4 )
             {
-            winLoseTie = 1;
-            switch (winLoseTie)
-                {
-                case 1:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
-                    ending();
-                    break;
-                case 2:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
-                    ending();
-                    break;
-                case 3:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
-                    ending();
-                    break;
-                };
-            }else if ( rounds === 7 || player2Score === 4 )
+                gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`;
+                ending();
+            }else if ( player2Score === 4 )
             {
-            winLoseTie = 2;
-            switch (winLoseTie)
-                {
-                case 1:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
-                    ending();
-                    break;
-                case 2:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
-                    ending();
-                    break;
-                case 3:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
-                    ending();
-                    break;
-                };
+                gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`;
+                ending();
             }
     });
 
@@ -98,61 +63,30 @@ paperBtn.addEventListener( "click", async () =>
             {
                 player1Score += 1;
                 scorePlayer1.textContent = player1Score;
-                rounds += 1;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! You destroyed them!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! You destroyed them!`;
             }else if ( playerResponse === cpuResponse )
             {
                 player1Score;
                 player2Score;
-                rounds;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! An even clash!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! An even clash!`;
             }else
             {
                 player2Score += 1;
                 scorePlayer2.textContent = player2Score;
-                rounds += 1;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`;
             }
     
-        if ( rounds === 7 || player1Score === 4 )
+        if ( player1Score === 4 )
             {
-            winLoseTie = 1;
-            switch (winLoseTie)
-                {
-                case 1:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
-                    ending();
-                    break;
-                case 2:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
-                    ending();
-                    break;
-                case 3:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
-                    ending();
-                    break;
-                };
-            }else if ( rounds === 7 || player2Score === 4 )
+                gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`;
+                ending();
+            }else if ( player2Score === 4 )
             {
-            winLoseTie = 2;
-            switch (winLoseTie)
-                {
-                case 1:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
-                    ending();
-                    break;
-                case 2:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
-                    ending();
-                    break;
-                case 3:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
-                    ending();
-                    break;
-                };
+                gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`;
+                ending();
             }
     });
 
@@ -165,61 +99,30 @@ scissorBtn.addEventListener( "click", async () =>
             {
                 player1Score += 1;
                 scorePlayer1.textContent = player1Score;
-                rounds += 1;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! You destroyed them!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! You destroyed them!`;
             }else if ( playerResponse === cpuResponse )
             {
                 player1Score;
                 player2Score;
-                rounds;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! An even clash!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! An even clash!`;
             }else
             {
                 player2Score += 1;
                 scorePlayer2.textContent = player2Score;
-                rounds += 1;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`;
             }
     
-        if ( rounds === 7 || player1Score === 4 )
+        if ( player1Score === 4 )
             {
-            winLoseTie = 1;
-            switch (winLoseTie)
-                {
-                case 1:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
-                    ending();
-                    break;
-                case 2:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
-                    ending();
-                    break;
-                case 3:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
-                    ending();
-                    break;
-                };
-            }else if ( rounds === 7 || player2Score === 4 )
+                gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`;
+                ending();
+            }else if ( player2Score === 4 )
             {
-            winLoseTie = 2;
-            switch (winLoseTie)
-                {
-                case 1:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
-                    ending();
-                    break;
-                case 2:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
-                    ending();
-                    break;
-                case 3:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
-                    ending();
-                    break;
-                };
+                gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`;
+                ending();
             }
     });
 
@@ -232,61 +135,30 @@ lizardBtn.addEventListener( "click", async () =>
             {
                 player1Score += 1;
                 scorePlayer1.textContent = player1Score;
-                rounds += 1;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! You destroyed them!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! You destroyed them!`;
             }else if ( playerResponse === cpuResponse )
             {
                 player1Score;
                 player2Score;
-                rounds;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! An even clash!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! An even clash!`;
             }else
             {
                 player2Score += 1;
                 scorePlayer2.textContent = player2Score;
-                rounds += 1;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`;
             }
     
-        if ( rounds === 7 || player1Score === 4 )
+        if ( player1Score === 4 )
             {
-            winLoseTie = 1;
-            switch (winLoseTie)
-                {
-                case 1:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
-                    ending();
-                    break;
-                case 2:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
-                    ending();
-                    break;
-                case 3:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
-                    ending();
-                    break;
-                };
-            }else if ( rounds === 7 || player2Score === 4 )
+                gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`;
+                ending();
+            }else if ( player2Score === 4 )
             {
-            winLoseTie = 2;
-            switch (winLoseTie)
-                {
-                case 1:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
-                    ending();
-                    break;
-                case 2:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
-                    ending();
-                    break;
-                case 3:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
-                    ending();
-                    break;
-                };
+                gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`;
+                ending();
             }
     });
 
@@ -299,61 +171,30 @@ spockBtn.addEventListener( "click", async () =>
             {
                 player1Score += 1;
                 scorePlayer1.textContent = player1Score;
-                rounds += 1;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! You destroyed them!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! You destroyed them!`;
             }else if ( playerResponse === cpuResponse )
             {
                 player1Score;
                 player2Score;
-                rounds;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! An even clash!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! An even clash!`;
             }else
             {
                 player2Score += 1;
                 scorePlayer2.textContent = player2Score;
-                rounds += 1;
                 rpsls.classList = "endOpacity lastPlay";
-                rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`
+                rpsls.textContent = `The enemy chose ${cpuResponse}! They destroyed you!`;
             }
     
-        if ( rounds === 7 || player1Score === 4 )
+        if ( player1Score === 4 )
             {
-            winLoseTie = 1;
-            switch (winLoseTie)
-                {
-                case 1:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
-                    ending();
-                    break;
-                case 2:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
-                    ending();
-                    break;
-                case 3:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
-                    ending();
-                    break;
-                };
-            }else if ( rounds === 7 || player2Score === 4 )
+                gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`;
+                ending();
+            }else if ( player2Score === 4 )
             {
-            winLoseTie = 2;
-            switch (winLoseTie)
-                {
-                case 1:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
-                    ending();
-                    break;
-                case 2:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
-                    ending();
-                    break;
-                case 3:
-                    gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
-                    ending();
-                    break;
-                };
+                gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`;
+                ending();
             }
     });
 
