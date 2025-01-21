@@ -1,17 +1,7 @@
-const player1 = document.getElementById ( "player1" );
-const player2 = document.getElementById ( "player2" );
+import { winConditions, ending, switchToPlayer2} from "./app.js";
 
 const gameMode = document.getElementById ( "gameMode" );
-const rpsls = document.getElementById ( "rpsls" );
-const gameTitle = document.getElementById ( "gameTitle" );
 
-const rock = document.getElementById ( "rock" );
-const paper = document.getElementById ( "paper" );
-const scissor = document.getElementById ( "scissor" );
-const lizard = document.getElementById ( "lizard" );
-const spock = document.getElementById ( "spock" );
-
-const player1Btns = document.getElementById ( "player1Btns" );
 const player2Btns = document.getElementById ( "player2Btns" );
 
 const rockBtn = document.getElementById ( "rockBtn" );
@@ -26,25 +16,8 @@ const scissorBtn2 = document.getElementById ( "scissorBtn2" );
 const lizardBtn2 = document.getElementById ( "lizardBtn2" );
 const spockBtn2 = document.getElementById ( "spockBtn2" );
 
-const yesBtn = document.getElementById ( "yesBtn" );
-const noBtn = document.getElementById ( "noBtn" );
-
 const scorePlayer1 = document.getElementById ( "scorePlayer1" );
 const scorePlayer2 = document.getElementById ( "scorePlayer2" );
-
-const endPopup = document.getElementById ( "endPopup" );
-const endCenter = document.getElementById ( "endCenter" );
-
-const winConditions =
-{
-    "Rock": [ "Scissor", "Lizard" ],
-    "Paper": [ "Rock", "Spock" ],
-    "Scissor": [ "Paper", "Lizard" ],
-    "Lizard": [ "Spock", "Paper" ],
-    "Spock": [ "Scissor", "Rock" ]
-};
-
-let winLoseTie = 0;
 
 let player1Score = 0;
 
@@ -54,51 +27,24 @@ let player1Response = "";
 
 let player2Response = "";
 
-const ending = () =>
-{
-    rpsls.textContent = "Play Again?"
-    gameTitle.textContent = ""
-    endPopup.classList = "row2 endScreen"
-    gameMode.classList = "endOpacity";
-    rpsls.classList = "endOpacity playAgain";
-    endCenter.classList = "endCenter"
-    rock.classList = "displayNone"
-    paper.classList = "displayNone"
-    scissor.classList = "displayNone"
-    lizard.classList = "displayNone"
-    spock.classList = "displayNone"
-    yesBtn.classList = "";
-    noBtn.classList = "";
-}
-
-const switchToPlayer2 = () =>
-{
-    player1.classList = "inactivePlayer";
-    player2.classList = "activePlayer";
-    player1Btns.classList = "displayNone";
-    player2Btns.classList = "";
-}
-
-const switchToPlayer1 = () =>
-{
-    player1.classList = "activePlayer";
-    player2.classList = "inactivePlayer";
-    player1Btns.classList = "";
-    player2Btns.classList = "displayNone";
-}
-
-const checkRoundWinner = (player1Response, player2Response) =>
+const checkRoundWinner = () =>
 {
     if ( winConditions[ player1Response ].includes( player2Response ) )
     {
         player1Score += 1;
+        scorePlayer1.textContent = player1Score;
+        ending();
+        gameMode.textContent = `Player 2 chose '${player2Response}', Player 1 Wins!`;
     }else if ( winConditions[ player2Response ].includes( player1Response ) )
     {
         player2Score += 1;
+        scorePlayer2.textContent = player2Score;
+        ending();
+        gameMode.textContent = `Player 1 chose '${player1Response}', Player 2 Wins!`;
     }else if ( player1Response === player2Response )
     {
-        player1Score;
-        player2Score;
+        ending();
+        gameMode.textContent = `Its a Tie!`;
     }
 }
 
@@ -134,32 +80,37 @@ spockBtn.addEventListener( "click", async () =>
 
 rockBtn2.addEventListener( "click", async () =>
     {
-        switchToPlayer1();
         player2Response = "Rock";
+        player2Btns.classList = "displayNone";
+        checkRoundWinner();
     });
 
 paperBtn2.addEventListener( "click", async () =>
     {
-        switchToPlayer1();
         player2Response = "Paper";
+        player2Btns.classList = "displayNone";
+        checkRoundWinner();
     });
 
 scissorBtn2.addEventListener( "click", async () =>
     {
-        switchToPlayer1();
         player2Response = "Scissor";
+        player2Btns.classList = "displayNone";
+        checkRoundWinner();
     });
 
 lizardBtn2.addEventListener( "click", async () =>
     {
-        switchToPlayer1();
         player2Response = "Lizard";
+        player2Btns.classList = "displayNone";
+        checkRoundWinner();
     });
 
 spockBtn2.addEventListener( "click", async () =>
     {
-        switchToPlayer1();
         player2Response = "Spock";
+        player2Btns.classList = "displayNone";
+        checkRoundWinner();
     });
 
 const startScreen = document.getElementById( "startScreen" );

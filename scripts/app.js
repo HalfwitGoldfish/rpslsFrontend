@@ -16,20 +16,36 @@ const winConditions =
 };
 
 const ending = () =>
+    {
+        rpsls.textContent = "Play Again?"
+        gameTitle.textContent = ""
+        endPopup.classList = "row2 endScreen"
+        gameMode.classList = "endOpacity";
+        rpsls.classList = "endOpacity playAgain";
+        endCenter.classList = "endCenter"
+        rock.classList = "displayNone"
+        paper.classList = "displayNone"
+        scissor.classList = "displayNone"
+        lizard.classList = "displayNone"
+        spock.classList = "displayNone"
+        yesBtn.classList = "";
+        noBtn.classList = "";
+    }
+
+const switchToPlayer2 = () =>
 {
-    rpsls.textContent = "Play Again?"
-    gameTitle.textContent = ""
-    endPopup.classList = "row2 endScreen"
-    gameMode.classList = "endOpacity";
-    rpsls.classList = "endOpacity playAgain";
-    endCenter.classList = "endCenter"
-    rock.classList = "displayNone"
-    paper.classList = "displayNone"
-    scissor.classList = "displayNone"
-    lizard.classList = "displayNone"
-    spock.classList = "displayNone"
-    yesBtn.classList = "";
-    noBtn.classList = "";
+    player1.classList = "inactivePlayer";
+    player2.classList = "activePlayer";
+    player1Btns.classList = "displayNone";
+    player2Btns.classList = "";
 }
 
-export { getData, winConditions, ending };
+const switchToPlayer1 = () =>
+{
+    player1.classList = "activePlayer";
+    player2.classList = "inactivePlayer";
+    player1Btns.classList = "";
+    player2Btns.classList = "displayNone";
+}
+
+export { getData, winConditions, ending, switchToPlayer1, switchToPlayer2 };

@@ -44,15 +44,15 @@ rockBtn.addEventListener( "click", async () =>
         switch (winLoseTie)
         {
         case 1:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`;
             ending();
             break;
         case 2:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`;
             ending();
             break;
         case 3:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`;
             ending();
             break;
         };
@@ -83,15 +83,15 @@ paperBtn.addEventListener( "click", async () =>
         switch (winLoseTie)
         {
         case 1:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`;
             ending();
             break;
         case 2:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`;
             ending();
             break;
         case 3:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`;
             ending();
             break;
         };
@@ -122,15 +122,15 @@ scissorBtn.addEventListener( "click", async () =>
         switch (winLoseTie)
         {
         case 1:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`;
             ending();
             break;
         case 2:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`;
             ending();
             break;
         case 3:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`;
             ending();
             break;
         };
@@ -161,15 +161,15 @@ lizardBtn.addEventListener( "click", async () =>
         switch (winLoseTie)
         {
         case 1:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`;
             ending();
             break;
         case 2:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`;
             ending();
             break;
         case 3:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`;
             ending();
             break;
         };
@@ -200,15 +200,15 @@ spockBtn.addEventListener( "click", async () =>
         switch (winLoseTie)
         {
         case 1:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', You Win!`;
             ending();
             break;
         case 2:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`;
             ending();
             break;
         case 3:
-            gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`
+            gameMode.textContent = `The enemy chose '${cpuResponse}', Its a Tie!`;
             ending();
             break;
         };
