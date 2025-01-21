@@ -50,7 +50,7 @@ rockBtn.addEventListener( "click", async () =>
             }else if ( player2Score === 3 )
             {
                 gameMode.textContent = `The enemy chose '${cpuResponse}', You Lose!`;
-                ending();;
+                ending();
             }
     });
 
